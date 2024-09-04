@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johannas Växtklubb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Johannas Växtklubb</h1>
+    </header>
+
+    <main>
+        <section id="add-plant">
+            <h2>Lägg till en växt</h2>
+            <form id="plant-form">
+                <label for="plant-name">Växtens namn:</label>
+                <input type="text" id="plant-name" required>
+
+                <label for="plant-type">Typ av växt:</label>
+                <input type="text" id="plant-type" required>
+
+                <label for="plant-review">Recension:</label>
+                <textarea id="plant-review" rows="4" required></textarea>
+
+                <button type="submit">Lägg till recension</button>
+            </form>
+        </section>
+
+        <section id="plant-list">
+            <h2>Recensioner</h2>
+            <ul id="reviews">
+                <!-- Recensioner kommer att läggas här -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Johannas Växtklubb</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
